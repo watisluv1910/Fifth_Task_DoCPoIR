@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --secondary-color: #FFFCF2;
+    --primary-color: #CCC5B9;
+    --text-color: #252422;
+    --accent-gray-color: #403D39;
+    --accent-orange-color: #EB5E28;
+    --accent-blue-color: #5AA9E6;
+}
+
+$colors: (
+    picker-red: #DB2828,
+    picker-blue: #2185D0,
+    picker-green: #21BA45,
+);
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* TODO: Custom scrollbar */
+    overflow-x: hidden;
+
+    color: #403D39;
+    background: var(--primary-color);
+}
+
+main {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section {
+    min-height: 100vh;
+}
+
+main section:first-of-type {
+    min-height: calc(100vh - 80px);
+}
+
+main .box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+main .box .box-item {
+    width: 300px;
+    min-height: 400px;
+
+    padding: 20px;
+    margin: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: 0.5s ease-in-out;
+    
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: var(--secondary-color);
+}
+
+main .cards-box .card:nth-child(1) {
+    align-items: flex-start;
+    text-align: left;
+}
+
+main .cards-box .card:nth-child(3) {
+    align-items: flex-end;
+    text-align: right;
+}
+
+main .cards-box .card:hover {
+    transform: translate(0, -20px);
+}
+
+main .box h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    color: var(--accent-orange-color);
+}
+
+main .box p {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+
+    color: var(--text-color);
+}
+
+main .cards-box .image {
+    width: 64px;
+    height: 64px;
+}
+
+/* ! Second task */
+main .article-wrapper {
+    margin: 10px;
+
+    border-radius: 15px;
+    background: var(--accent-gray-color);
+
+    /* Shadow */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), inset -2px -2px 10px rgba(255, 255, 255, 0.5), inset -2px -2px 10px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+main .articles-box .article {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 10px;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+main .articles-box .article:hover {
+    transform: scale(1.1);
+
+    /* Linear gradient background */
+    background: linear-gradient(45deg, var(--accent-blue-color), var(--secondary-color));
+}
+
+main .articles-box .article h1 {
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    /* semi-transparent color */
+    color: rgba(82, 82, 82, 0.2);
+}
+
+.box-item > .btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 15px;
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    color: var(--secondary-color);
+    background: var(--accent-orange-color);
+}
+
+/* ! Third subtask */
+.shop-box .product {
+    gap: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product .image-box {
+    width: 200px;
+    height: 100px;
+
+    margin-bottom: 20px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.product:nth-child(2) .image-box {
+    height: 200px;
+
+    margin-bottom: 0;
+}
+
+.product .image-box img {
+    transition: all 0.5s ease-in-out;
+}
+
+.product.active .image-box {
+    transform: translateY(60px);
+}
+
+.product.active .image-box img {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.product .text-box {
+    scale: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.product.active .text-box {
+    scale: 0;
+}
+
+.product .colorPicker {
+    
+}
+
+input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+
+        span { transform: scale(1.25); }
+
+        @each $name, $value in $colors {
+            .#{$name} {
+            border: 2px solid darken($value, 25%);
+            }
+        } // ? End of each
+    } // ? End of checked + label
+}
+
+label {
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        span { 
+            transform: scale(1.25); 
+        }
+    }
+
+    span {
+
+      display: block;
+
+      width: 100%;
+      height: 100%;
+
+      transition: transform .2s ease-in-out;
+
+      @each $name, $value in $colors {
+        &.#{$name} {
+          background: $value;
+        }
+      }
+    }
+  }

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/reset.css">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/palette.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/scrollbar.css">
+        <title>Practical work num.5</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="nav-group">
+                <ul class="nav-item navigation" role="list">
+                    <li><a href="/pages/news-page.html">Home</a></li>
+                    <li><a href="#cards">Section 1</a></li>
+                    <li><a href="#articles">Section 2</a></li>
+                    <li><a href="#shop">Section 3</a></li>
+                    <li><a href="#banner">Section 4</a></li>
+                </ul>
+                <div class="nav-item search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="btn search-btn"></ion-icon>
+                        <ion-icon name="close-outline" class="btn close-btn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search here . . .">
+            </div>
+        </header>
+
+        <main>
+
+            <!-- * First task -->
+            <section class="box cards-box" id="cards">
+                <div class="box-item card">
+                    <div class="image">
+                        <img src="/resources/images/guitar.png" alt="Guitar">
+                    </div>
+                    <div class="text-box">
+                        <h2>Guitar</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum quidem fuga qui quisquam enim ducimus eveniet, perferendis aspernatur soluta neque cupiditate, explicabo inventore distinctio maxime pariatur eaque minima earum.</p>
+                    </div>
+                </div>
+                <div class="box-item card">
+                    <div class="image">
+                        <img src="/resources/images/laptop.png" alt="Laptop">
+                    </div>
+                    <div class="text-box">
+                        <h2>Laptop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo temporibus fugit dignissimos voluptate nesciunt fuga harum ab, expedita porro velit quaerat. Neque cumque tempore debitis atque, nisi porro ipsum?</p>
+                    </div>
+                </div>
+                <div class="box-item card">
+                    <div class="image">
+                        <img src="/resources/images/motorcycle.png" alt="Motorcycle">
+                    </div>
+                    <div class="text-box">
+                        <h2>Motorcycle</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus natus iusto neque reiciendis dolorem laboriosam amet! At, ipsa. Sapiente explicabo ipsum repellat dicta nemo magni ducimus libero veniam culpa.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- * Second task -->
+            <section class="box articles-box" id="articles">
+                <div class="article-wrapper">
+                    <div class="box-item article">
+                        <div class="text-box">
+                            <h1>01</h1>
+                            <h2>Header 1</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam ullam praesentium ea placeat corrupti perferendis facilis eius adipisci totam vitae incidunt, suscipit dolorem consequuntur illo unde iste facere pariatur?</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>   
+                <div class="article-wrapper">
+                    <div class="box-item article">
+                        <div class="text-box">
+                            <h1>02</h1>
+                            <h2>Header 2</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas odit numquam quae quod! Mollitia optio incidunt aliquid expedita rem atque aspernatur. Debitis voluptate, ducimus in autem fuga pariatur quas nostrum.</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>  
+                <div class="article-wrapper">
+                    <div class="box-item article">
+                        <div class="text-box">
+                            <h1>03</h1>
+                            <h2>Header 3</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum dolores nihil doloribus eveniet quod sed libero aut magnam ducimus nam voluptatum in quidem, voluptate officiis? Omnis eveniet ratione assumenda!</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>         
+            </section>
+
+            <!-- * Third subtask -->
+            <section class="box shop-box" id="shop">
+                <div class="box-item product">
+                    <div class="image-box">
+                        <img src="/resources/images/shoe.png" alt="Shoe">
+                    </div>
+                    <div class="text-box">
+                        <h2>Yellow shoe</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="colorPicker">
+                        <h2>Choose wanted color</h2>
+                        
+                        <input type="radio" name="color" id="red" value="red" />
+                        <label for="red"><span class="red"></span></label>
+
+                        <input type="radio" name="color" id="green" />
+                        <label for="green"><span class="green"></span></label>
+
+                        <input type="radio" name="color" id="blue" />
+                        <label for="blue"><span class="blue"></span></label>
+                    </div>
+                    <div class="btn shop-btn">
+                        Shop now
+                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="box-item product"> 
+                    <div class="image-box">
+                        <img src="/resources/images/shahed.png" alt="Shoe">
+                    </div>
+                    <div class="text-box">
+                        <h2>Not Iranian drones</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="btn shop-btn">
+                        Shop now
+                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="box-item product">
+                    <div class="image-box">
+                        <img src="/resources/images/lada.png" alt="Shoe">
+                    </div>
+                    <div class="text-box">
+                        <h2>The best car</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                    <div class="colorPicker">
+                        <h2>Choose wanted color</h2>
+                        
+                        <input type="radio" name="color" id="red" value="red" />
+                        <label for="red"><span class="red"></span></label>
+
+                        <input type="radio" name="color" id="green" />
+                        <label for="green"><span class="green"></span></label>
+
+                        <input type="radio" name="color" id="blue" />
+                        <label for="blue"><span class="blue"></span></label>
+                    </div>
+                    <div class="btn shop-btn">
+                        Shop now
+                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- * Fourth subtask -->
+            <section class="box banner-box" id="banner">
+                <div class="banner-item">
+                    <div class="image-box">
+                        <img class="banner-image" src="/resources/images/raiden.png" alt="Shogun">
+                    </div>
+                    <div id="banner-info">
+                        <div class="text-box">
+                            <h2>Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde, dolores blanditiis voluptates cum expedita.</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>      
+                </div>              
+        </main>
+
+        <!-- For ion-icons correct work -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- Scripts -->
+        <script src="/scripts/headerSearch.js"></script>
+        <script src="/scripts/shop.js"></script>
+        <script src="/scripts/banner.js"></script>
+    </body>
+</html>

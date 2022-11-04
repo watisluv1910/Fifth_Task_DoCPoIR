@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/reset.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/news-style.css">
+        <link rel="stylesheet" href="/styles/palette.css">
+        <link rel="stylesheet" href="/styles/scrollbar.css">
+        <title>News</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="nav-group">
+                <ul class="nav-item navigation" role="list">
+                    <li><a href="/pages/index.html">Home</a></li>
+                </ul>
+                <div class="nav-item search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="btn search-btn"></ion-icon>
+                        <ion-icon name="close-outline" class="btn close-btn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search here . . .">
+            </div>
+        </header>
+
+        <main>
+            <div class="main-wrapper">
+                <div class="news-container">
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="/resources/images/news/news-1_640x360.jpg" alt="news-1">
+                        </div>
+                        <div class="news-content">
+                            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</h2>
+                            <p class="news-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rerum accusamus mollitia, dolore blanditiis cumque iure id corrupti optio tempore eum! Veritatis consequatur soluta dignissimos delectus corporis quos facere animi?</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="/resources/images/news/news-2_982x726.jpg" alt="news-2">
+                        </div>
+                        <div class="news-content">
+                            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</h2>
+                            <p class="news-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis fugit nam veniam saepe nulla dolor culpa vel ratione unde hic, soluta mollitia corrupti, voluptas, quibusdam rem laudantium quasi nisi dolorem.</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="/resources/images/news/news-3_1065x599.jpg" alt="news-3">
+                        </div>
+                        <div class="news-content">
+                            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</h2>
+                            <p class="news-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nisi alias laborum libero. Aliquid deleniti, quas blanditiis asperiores dolorem impedit neque, facere a, doloremque cumque omnis? Quis quaerat aperiam exercitationem?</p>
+                        </div>
+                        <div class="btn more-btn">
+                            More information
+                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </main>
+
+
+        <!-- For ion-icons correct work -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- Scripts -->
+        <script src="/scripts/headerSearch.js"></script>
+    </body>
+</html>
